@@ -6,8 +6,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        CalculatorService calculatorService = (CalculatorService) context.getBean("calculatorService");
-        String text= calculatorService.holaMundo();
+        Calculadora calculadora = (Calculadora) context.getBean("calculadora");
+        String text= calculadora.holaMundo();
         System.out.println(text);
+
+        GestorFacturas gestor= (GestorFacturas) context.getBean("gestorFacturas");
+        
+
     }
 }
