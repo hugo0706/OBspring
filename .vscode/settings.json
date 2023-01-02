@@ -1,3 +1,10 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.sourcePaths": [
+        "spring/ob-springdatajpa",
+        "spring/a/src/main/java/com/example/obsprindatajpa",
+        "spring/a",
+        "spring/obsprindatajpa/src/main/java/com/example/obsprindatajpa"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
